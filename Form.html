@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>form</title>
+	<style type="text/css">
+		.er{
+			background: skyblue;
+			width: 200px;
+			padding: 20px;
+			backdrop-filter: 11px 20px;
+
+		}
+		.qw{
+			display: flex;
+			justify-content: center;
+			margin-top: 30vh;
+			background:gray;
+			padding: 20px;
+			width: 200px;
+			margin-left: 500px;
+			border-radius: 10px;
+		}
+
+.e{
+	margin-top: 10px;
+}
+	</style>
+
+</head>
+<body>
+  <div class="qw">
+  	<div class="er">
+		<form action="">
+  		<h1>FORM</h1>
+  		UserNames<br><input type="text" id="we" name="names"  ><br>
+        email<br><input type="email" id="wa" name="email" ><br>
+        password<br><input type="password" id="wu" name="password" ><br>
+        <button onclick="alash()" class="e" type="submit">submit</button>
+  	</div></form>
+  </div>
+  <script type="text/javascript">
+  	function alash() {
+  	      const you=document.getElementById('we').value;
+  	      const ya=document.getElementById('wa').value;
+  	      const yo=document.getElementById('wu').value;
+  	      if(you==""){
+  	      alert("insert into provided username");
+  	}
+  	 else if(ya==""){
+  	      alert("insert into provided email");
+  	 }
+  	
+  	 else if(yo==""){
+  	      alert("insert into provided password");
+  	 }
+	 else{
+		alert("Data submitted!")
+	 }
+  	}
+  </script>
+</body> 
+</html>
